@@ -1,0 +1,22 @@
+version: '3.1'
+
+services:
+  goStatic:
+    image: pierrezemb/gostatic
+    deploy:
+      labels:
+        - "traefik.docker.network=traefik-net"
+        - "traefik.frontend.rule=Host:www.guythomas.me,guythomas.me"
+        - "traefik.frontend.entryPoints=http,https"
+        - "traefik.port=8043"
+        - "traefik.enable=true"
+      placement:
+        constraints:
+         - node.labels.arch == x86
+    networks:
+      - traefik-net
+    volumes:
+      - ./public:/srv/http
+networks:
+  traefik-net:
+    external: true

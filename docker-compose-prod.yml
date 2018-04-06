@@ -1,8 +1,9 @@
 version: '3.1'
 
 services:
-  goStatic:
-    image: pierrezemb/gostatic
+  resume-webserver:
+    image: kyma/docker-nginx
+    command: nginx
     deploy:
       labels:
         - "traefik.docker.network=traefik-net"
@@ -16,7 +17,7 @@ services:
     networks:
       - traefik-net
     volumes:
-      - ./public:/srv/http
+      - ./public:/var/wwww
 networks:
   traefik-net:
     external: true

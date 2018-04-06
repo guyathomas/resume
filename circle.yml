@@ -1,0 +1,16 @@
+machine:
+  python:
+    version: 2.7.3
+  services:
+    - docker
+
+dependencies:
+  pre:
+    # - pip install awscli
+    - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
+    # Nginx
+    - docker build --rm=false -t stolemyusername/resume:latest .
+    - docker push stolemyusername/resume
+test:
+  override:
+    - echo "test"

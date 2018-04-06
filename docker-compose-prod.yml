@@ -2,8 +2,7 @@ version: '3.1'
 
 services:
   resume-webserver:
-    image: kyma/docker-nginx
-    command: nginx
+    image: nginx
     deploy:
       labels:
         - "traefik.docker.network=traefik-net"
@@ -17,7 +16,7 @@ services:
     networks:
       - traefik-net
     volumes:
-      - ./public:/var/wwww
+      - ./public:/usr/share/nginx/html
 networks:
   traefik-net:
     external: true

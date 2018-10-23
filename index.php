@@ -1,1 +1,0 @@
-<?php header( 'Location: /webserver/public/index.html' );  ?>

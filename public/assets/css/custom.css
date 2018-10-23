@@ -26,8 +26,15 @@
   display: none;
 }
 
+/* .intro .t-section__content {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.o-section__heading {
+  margin-bottom: 0;
+} */
 @media (min-width: 760px) {
   .o-section__header {
-    padding: 2.15rem 3.5rem 0.4rem;
+    padding: 2rem 3.5rem 0.4rem;
   }
 }

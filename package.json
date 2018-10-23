@@ -1,0 +1,20 @@
+{
+  "name": "guythomas-resume",
+  "version": "0.3.0",
+  "description": "Guy Thomas's Resume",
+  "engines": {
+    "node": "8.9.1"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.15.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/guyathomas/guythomas-resume"
+  },
+  "license": "MIT"
+}

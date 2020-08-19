@@ -31,3 +31,11 @@
     padding: 2rem 3.5rem 0.4rem;
   }
 }
+
+.hide-all {
+  display: none;
+}
+
+.full-width {
+  width: 100%;
+}

@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "express": "^4.15.2",
-    "puppeteer": "^1.11.0"
+    "puppeteer": "^1.13.0"
   },
   "repository": {
     "type": "git",

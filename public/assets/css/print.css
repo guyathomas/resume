@@ -63,4 +63,8 @@
 
 .o-section__heading {
   margin-bottom: 0;
-} 
+}
+
+.header-content {
+  padding-left: 0;
+}

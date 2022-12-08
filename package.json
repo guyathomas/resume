@@ -11,7 +11,7 @@
     "save-pdf": "node save-pdf"
   },
   "dependencies": {
-    "express": "^4.15.2",
+    "express": "^4.18.2",
     "puppeteer": "^1.11.0"
   },
   "repository": {
